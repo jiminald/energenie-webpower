@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/assets/bootstrap4-toggle/css/bootstrap4-toggle.min.css">
+
+    <title>Energenie Socket Control</title>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center my-4">
+                <h1>Energenie Socket Control</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card-columns text-center" id="sockets">
+                    <!-- This has been left blank, as we'll build the toggles using Javascript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Socket toggle template -->
+    <div id="template" class="d-none">
+        <div class="card w-75">
+            <div class="card-header">[name]</div>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" data-socket-id="[socket_id]" data-onstyle="success" data-offstyle="danger" data-size="lg">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Required files for Bootstrap -->
+    <script src="/public/assets/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/public/assets/bootstrap/js/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="/public/assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Toggle -->
+    <script src="/public/assets/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
+
+    <!-- Our Script -->
+    <script src="/public/assets/script.js"></script>
+
+  </body>
+</html>

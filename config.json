@@ -1,0 +1,14 @@
+{
+	"http_host": "0.0.0.0",
+	"http_port": "8080",
+	"sockets" : {
+		"1": {
+			"name" : "Socket 1",
+			"default_state": true
+		},
+		"2": {
+			"name" : "Socket 2",
+			"default_state": false
+		}
+	}
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Energine Web Power Control
+After=sshd.service
+
+[Service]
+Type=simple
+ExecStart=/home/pi/energenie-webpower/server.py
+User=root
+
+[Install]
+WantedBy=multi-user.target
